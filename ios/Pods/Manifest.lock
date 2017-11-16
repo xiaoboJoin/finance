@@ -1,0 +1,60 @@
+PODS:
+  - AESCrypt-ObjC (1.0.2)
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - Masonry (1.0.2)
+  - PDTSimpleCalendar (0.9.1)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - AESCrypt-ObjC (~> 1.0.2)
+  - AFNetworking (~> 3.1.0)
+  - BlocksKit (~> 2.2.5)
+  - Masonry (~> 1.0.2)
+  - PDTSimpleCalendar (~> 0.9.1)
+  - SDWebImage (~> 4.0.0)
+  - YYModel (~> 1.0.4)
+
+SPEC CHECKSUMS:
+  AESCrypt-ObjC: 6d930ff891a61b90505855e9447959a84be80715
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  PDTSimpleCalendar: d1c03387678422715dc021aa1a85d70f4d1014f2
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 9690d344aa2212159e2a15d01fc8a40ea892c52b
+
+COCOAPODS: 1.2.1
