@@ -21,7 +21,6 @@
 		C4051ABC1EE3D92D00DF37D8 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4051ABB1EE3D92D00DF37D8 /* UserViewController.m */; };
 		C40CC8571F021274003E6206 /* PacketMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = C40CC8561F021274003E6206 /* PacketMananger.m */; };
 		C423B5A01F024767004CEAEE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4051A7A1EE3C0C900DF37D8 /* AppDelegate.m */; };
-		C42FE6311F569AF200B4F241 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = C42FE6301F569AF200B4F241 /* Person.m */; };
 		C46575D71F0CAF380032AC9F /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C46575D61F0CAF380032AC9F /* BaseTableViewCell.m */; };
 		C47DAFAC1F0256AE00D2EAC6 /* PacketEntity+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C47DAFA91F0256AE00D2EAC6 /* PacketEntity+CoreDataClass.m */; };
 		C47DAFAD1F0256AE00D2EAC6 /* PacketEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C47DAFAB1F0256AE00D2EAC6 /* PacketEntity+CoreDataProperties.m */; };
@@ -87,8 +86,6 @@
 		C4051ABB1EE3D92D00DF37D8 /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
 		C40CC8551F021274003E6206 /* PacketMananger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketMananger.h; sourceTree = "<group>"; };
 		C40CC8561F021274003E6206 /* PacketMananger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PacketMananger.m; sourceTree = "<group>"; };
-		C42FE62F1F569AF200B4F241 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		C42FE6301F569AF200B4F241 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		C46575D51F0CAF380032AC9F /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
 		C46575D61F0CAF380032AC9F /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 		C47DAFA81F0256AE00D2EAC6 /* PacketEntity+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PacketEntity+CoreDataClass.h"; sourceTree = "<group>"; };
@@ -209,8 +206,6 @@
 				C4051AAD1EE3C5E500DF37D8 /* ViewController */,
 				C4051A791EE3C0C900DF37D8 /* AppDelegate.h */,
 				C4051A7A1EE3C0C900DF37D8 /* AppDelegate.m */,
-				C42FE62F1F569AF200B4F241 /* Person.h */,
-				C42FE6301F569AF200B4F241 /* Person.m */,
 				C4051A851EE3C0C900DF37D8 /* Assets.xcassets */,
 				C4051A871EE3C0C900DF37D8 /* LaunchScreen.storyboard */,
 				C4051A8A1EE3C0C900DF37D8 /* Info.plist */,
@@ -587,7 +582,6 @@
 				C47DAFB61F03BABF00D2EAC6 /* InputTableViewCell.m in Sources */,
 				C4051AB91EE3D91F00DF37D8 /* InViewController.m in Sources */,
 				C47DAFB91F03BCA700D2EAC6 /* TextTableViewCell.m in Sources */,
-				C42FE6311F569AF200B4F241 /* Person.m in Sources */,
 				C47DAFB31F03B7CD00D2EAC6 /* AddInViewController.m in Sources */,
 				C4051AB61EE3D91100DF37D8 /* OutViewController.m in Sources */,
 				C4051AB31EE3D8F200DF37D8 /* BaseViewController.m in Sources */,
