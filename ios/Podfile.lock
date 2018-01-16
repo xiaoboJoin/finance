@@ -33,11 +33,29 @@ PODS:
   - ChameleonFramework (2.1.0):
     - ChameleonFramework/Default (= 2.1.0)
   - ChameleonFramework/Default (2.1.0)
+  - CocoaLumberjack (3.3.0):
+    - CocoaLumberjack/Default (= 3.3.0)
+    - CocoaLumberjack/Extensions (= 3.3.0)
+  - CocoaLumberjack/Default (3.3.0)
+  - CocoaLumberjack/Extensions (3.3.0):
+    - CocoaLumberjack/Default
+  - DZNEmptyDataSet (1.8.1)
+  - ios-charts (0.0.1)
+  - iRate (1.12.1)
   - Masonry (1.0.2)
+  - MBProgressHUD (1.1.0)
+  - MGSwipeTableCell (1.5.6)
   - PDTSimpleCalendar (0.9.1)
+  - PocketSVG (0.7)
+  - RaptureXML (1.0.1)
+  - ReactiveObjC (3.0.0)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
+  - SVGKit (2.0.1):
+    - CocoaLumberjack (~> 3.x)
+  - UIImage+SVG (0.1):
+    - RaptureXML (~> 1.0.1)
   - UMengAnalytics (4.2.4)
   - WechatOpenSDK (1.7.9)
   - YYModel (1.0.4)
@@ -47,25 +65,55 @@ DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
   - BlocksKit (~> 2.2.5)
   - ChameleonFramework
+  - DZNEmptyDataSet (~> 1.8.1)
+  - ios-charts (~> 0.0.1)
+  - iRate (~> 1.12.1)
   - Masonry (~> 1.0.2)
+  - MBProgressHUD (~> 1.1.0)
+  - MGSwipeTableCell (~> 1.5.6)
   - PDTSimpleCalendar (~> 0.9.1)
+  - PocketSVG
+  - ReactiveObjC
   - SDWebImage (~> 4.0.0)
+  - SVGKit (from `https://github.com/SVGKit/SVGKit.git`, branch `2.x`)
+  - UIImage+SVG (~> 0.1)
   - UMengAnalytics
   - WechatOpenSDK
   - YYModel (~> 1.0.4)
+
+EXTERNAL SOURCES:
+  SVGKit:
+    :branch: 2.x
+    :git: https://github.com/SVGKit/SVGKit.git
+
+CHECKOUT OPTIONS:
+  SVGKit:
+    :commit: 51b6f534b09236acfe04d520336a05a1096e67ae
+    :git: https://github.com/SVGKit/SVGKit.git
 
 SPEC CHECKSUMS:
   AESCrypt-ObjC: 6d930ff891a61b90505855e9447959a84be80715
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  ios-charts: 9fe9e64632a8480b940e1ac66e73dd18d5358a83
+  iRate: 59c63a290d4988f365d4338e58eca192ae92b552
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MGSwipeTableCell: 616700eb0ffd1c611ba909066cb7fd739790a0a7
   PDTSimpleCalendar: d1c03387678422715dc021aa1a85d70f4d1014f2
+  PocketSVG: e05e6b008c6232d7b6410bb1ff34db71957b776d
+  RaptureXML: b5c33c04c1a4adfd8ad0d5463329a31820596e82
+  ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  SVGKit: 4055d9e809b5db8633755979cfb3b02dc5a8c20d
+  UIImage+SVG: 23a2edbb60b0f4c083068963086e309ebd8be592
   UMengAnalytics: ef8d45f94c0e5771dc364cf6a5731d9d3b101da2
   WechatOpenSDK: 1fe7e3b07db860d6a936c3ff4a5aba6b890958d9
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: c6b3c0b0ec48d5e5975b3ca3f8f047dbf0417f07
+PODFILE CHECKSUM: 5e91d0ac684e4475612083ddb5d37915dbf14c8a
 
 COCOAPODS: 1.2.1
