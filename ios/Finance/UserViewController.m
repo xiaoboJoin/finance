@@ -7,6 +7,7 @@
 //
 
 #import "UserViewController.h"
+#import "LoginViewController.h"
 
 @interface UserViewController ()
 {
@@ -26,7 +27,7 @@
         viewModel = @[
                       @{@"text":@"设置密码"}];
         
-        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"设置" image:nil selectedImage:nil];
+        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"个人中心" image:nil selectedImage:nil];
     }
     return self;
 }
@@ -48,7 +49,7 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    self.tabBarController.title = @"设置";
+    self.tabBarController.title = @"个人中心";
     self.tabBarController.navigationItem.rightBarButtonItem =nil;
 }
 
@@ -56,7 +57,13 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 4;
+    if (section == 0) {
+         return 1;
+    }
+    else{
+         return 3;
+    }
+   
 }
 
 
@@ -66,23 +73,50 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        
+    }
+    if (indexPath.section == 0) {
+         cell.textLabel.text = @"登录";
+    }else{
+        if (indexPath.row == 0) {
+            cell.textLabel.text = @"意见反馈";
+        }else if (indexPath.row == 1) {
+            cell.textLabel.text = @"给予好评";
+        }else if (indexPath.row == 2) {
+            cell.textLabel.text = @"分享好友";
+        }
     }
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 0) {
+        return 44;
+    }
+    else{
+        return 44;
+    }
 }
 
 
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 8;
+    return 2;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    
-    
-    
+    if (indexPath.section == 0) {
+        LoginViewController *vc = [[LoginViewController alloc] init];
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+        [self.navigationController  presentViewController:nav animated:YES completion:^{
+            
+        }];
+    }
 }
 
 

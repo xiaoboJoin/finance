@@ -112,10 +112,20 @@
     [entity setValue:[_viewModel valueForKey:@"category"] forKey:@"category"];
     [entity setValue:[_viewModel valueForKey:@"num"] forKey:@"num"];
     [entity setValue:@""forKey:@"des"];
-    [[PacketMananger  sharedMananger] insertEntity:entity];
-    [[PacketMananger  sharedMananger] fetchEntity:@{@"type":@"out"} callback:^(NSError *err, NSArray *entities) {
-        NSLog(@"enti:%@",entities);
+    [[PacketMananger  sharedMananger] insertEntity:entity callback:^(NSError *err, NSArray *entities) {
+        if (err) {
+            [UIAlertView bk_showAlertViewWithTitle:@"温馨提示" message:@"创建失败，请重试！" cancelButtonTitle:nil otherButtonTitles:@[@"确定"] handler:^(UIAlertView *alertView, NSInteger buttonIndex) {
+                return ;
+            }];
+        }
+        else{
+            [[PacketMananger  sharedMananger] fetchEntity:@{@"type":@"out"} callback:^(NSError *err, NSArray *entities) {
+                NSLog(@"enti:%@",entities);
+            }];
+        }
+      
     }];
+   
     
 }
 
@@ -150,6 +160,7 @@
                 cell = [[TextTableViewCell alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:@"text"];
             }
             cell.textLabel.text = @"类 型";
+            cell.textLabel.textAlignment = NSTextAlignmentLeft;
             cell.detailTextLabel.text = [_viewModel objectForKey:@"category"]?[_viewModel objectForKey:@"category"]: @"结婚";
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             return cell;
@@ -313,7 +324,6 @@
 {
     [_viewModel setValue:sender.date forKey:@"date"];
     [_tableView reloadData];
-    
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
@@ -370,6 +380,15 @@
     return 1;
 }
 
+
+- (nullable NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+     return [_categoryArray objectAtIndex:row];
+}
+//- (nullable NSAttributedString *)pickerView:(UIPickerView *)pickerView attributedTitleForRow:(NSInteger)row forComponent:(NSInteger)component
+//{
+//    return [_categoryArray objectAtIndex:row];
+//}
 // returns the # of rows in each component..
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {

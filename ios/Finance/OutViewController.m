@@ -58,10 +58,7 @@
 - (void)add:(id)sender
 {
     AddOutViewController *vc = [[AddOutViewController alloc] init];
-    
     [self.navigationController pushViewController:vc animated:YES];
-    
-    
     
     
 }

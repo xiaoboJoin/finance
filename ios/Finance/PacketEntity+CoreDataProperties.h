@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) float num;
 @property (nullable, nonatomic, copy) NSString *phone;
 @property (nullable, nonatomic, copy) NSString *type;
+@property (nullable, nonatomic, copy) NSString *eventid;
 @property (nullable, nonatomic, copy) NSDate *updateAt;
 
 @end

@@ -8,12 +8,15 @@
 
 #import "InViewController.h"
 #import "PacketMananger.h"
-#import "PacketEntity+CoreDataClass.h"
+//#import "PacketEntity+CoreDataClass.h"
+#import "MomentEntity+CoreDataProperties.h"
+#import "AddMomentViewController.h"
+#import "MomentViewController.h"
 
 @interface InViewController ()
 {
     UITableView *_tableView;
-    NSMutableArray *_packetArr;
+    NSMutableArray *_momentList;
     
 }
 @end
@@ -24,8 +27,8 @@
 {
     self = [super init];
     if (self) {
-        _packetArr = [[NSMutableArray alloc] init];
-           self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"收礼" image:nil selectedImage:nil];
+        _momentList = [[NSMutableArray alloc] init];
+        self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"收礼" image:nil selectedImage:nil];
     }
     return self;
 }
@@ -40,7 +43,7 @@
         make.edges.equalTo(self.view).with.insets(UIEdgeInsetsMake(0, 0, 0, 0));
     }];
     // Do any additional setup after loading the view.
-    [self fetchPacketList:NO];
+    [self fetchMomentList:NO];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -51,50 +54,45 @@
 }
 - (void)add:(id)sender
 {
-    
+    AddMomentViewController *vc = [[AddMomentViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
-- (void)fetchPacketList:(BOOL)refresh{
-    [[PacketMananger sharedMananger] fetchEntity:nil callback:^(NSError *err, NSArray *entities) {
-        if (refresh) {
-            [_packetArr removeAllObjects];
-        }
-        [_packetArr addObjectsFromArray:entities];
-        [_tableView reloadData];
+- (void)fetchMomentList:(BOOL)refresh{
+    
+    [[PacketMananger sharedMananger] fetchMoment:nil callback:^(NSError *err, NSArray *entities)
+     {
+     _momentList = [entities mutableCopy];
+     [_tableView reloadData];
     }];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return _packetArr.count;
+    return _momentList.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 2;
+    return 1;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    PacketEntity *entity = [_packetArr objectAtIndex:indexPath.section];
+    MomentEntity *entity = [_momentList objectAtIndex:indexPath.section];
     UITableViewCell *cell = nil;
     if (indexPath.row == 0) {
         cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
         if (!cell) {
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:@"cell"];
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
+            cell.accessoryType= UITableViewCellAccessoryDisclosureIndicator;
         }
-        cell.textLabel.text = [entity valueForKey:@"name"];
-        cell.detailTextLabel.text =  [NSString stringWithFormat:@"%ld",[[entity valueForKey:@"num"] integerValue]];
-    }
-    else
-    {
-        cell= [tableView dequeueReusableCellWithIdentifier:@"detail"];
-        if (!cell) {
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"detail"];
-            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        }
-        cell.textLabel.text  = [entity valueForKey:@"date"];
+        cell.textLabel.text = [entity valueForKey:@"event"];
+        NSDate *date= [entity valueForKey:@"date"];
+        NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+        [dateFormat setDateFormat:@"yyyy-mm-dd"];
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"%@",[dateFormat stringFromDate:date]];
     }
     return cell;
   
@@ -103,15 +101,16 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    return @"string";
+    return @"";
 }
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    
-    
+    MomentEntity *entity = [_momentList objectAtIndex:indexPath.section];
+    MomentViewController *vc = [[MomentViewController alloc] init];
+    vc.moment = entity;
+    [self.navigationController pushViewController:vc animated:YES];
     
 }
 

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0194B3EE98FBEEBC99A070E3 /* libPods-FinanceTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C159A2018813882CA2759C25 /* libPods-FinanceTests.a */; };
+		245599B0F2AB05E15737A8F6 /* libPods-Finance.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA82FC5A6771EE25CC0EC34 /* libPods-Finance.a */; };
 		3AF411CA7985C45EB6816C71 /* libPods-FinanceUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3829779821CA9844A4145423 /* libPods-FinanceUITests.a */; };
 		C4051A781EE3C0C900DF37D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4051A771EE3C0C900DF37D8 /* main.m */; };
 		C4051A841EE3C0C900DF37D8 /* Finance.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4051A821EE3C0C900DF37D8 /* Finance.xcdatamodeld */; };
@@ -20,6 +21,7 @@
 		C4051AB91EE3D91F00DF37D8 /* InViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4051AB81EE3D91F00DF37D8 /* InViewController.m */; };
 		C4051ABC1EE3D92D00DF37D8 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4051ABB1EE3D92D00DF37D8 /* UserViewController.m */; };
 		C40CC8571F021274003E6206 /* PacketMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = C40CC8561F021274003E6206 /* PacketMananger.m */; };
+		C41091D31FC131CD00D1D512 /* AddCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C41091D21FC131CD00D1D512 /* AddCategoryViewController.m */; };
 		C423B5A01F024767004CEAEE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4051A7A1EE3C0C900DF37D8 /* AppDelegate.m */; };
 		C46575D71F0CAF380032AC9F /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C46575D61F0CAF380032AC9F /* BaseTableViewCell.m */; };
 		C47DAFAC1F0256AE00D2EAC6 /* PacketEntity+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C47DAFA91F0256AE00D2EAC6 /* PacketEntity+CoreDataClass.m */; };
@@ -35,6 +37,12 @@
 		C47F09171F0245B2002B13A1 /* libPDTSimpleCalendar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C47F09101F0245B2002B13A1 /* libPDTSimpleCalendar.a */; };
 		C47F09181F0245B2002B13A1 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C47F09111F0245B2002B13A1 /* libSDWebImage.a */; };
 		C47F09191F0245B2002B13A1 /* libYYModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C47F09121F0245B2002B13A1 /* libYYModel.a */; };
+		C4DE68DC1FC136C7002A68CC /* TextInputTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DE68DB1FC136C7002A68CC /* TextInputTableViewCell.m */; };
+		C4DE68F31FC164CA002A68CC /* MomentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DE68F21FC164CA002A68CC /* MomentViewController.m */; };
+		C4DE68F61FC16508002A68CC /* AddMomentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DE68F51FC16508002A68CC /* AddMomentViewController.m */; };
+		C4DE69021FC167A4002A68CC /* MomentEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DE69001FC167A4002A68CC /* MomentEntity+CoreDataProperties.m */; };
+		C4DE69061FC19BCE002A68CC /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DE69051FC19BCE002A68CC /* LoginViewController.m */; };
+		C4DE69091FC19DED002A68CC /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DE69081FC19DED002A68CC /* UserModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +94,9 @@
 		C4051ABB1EE3D92D00DF37D8 /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
 		C40CC8551F021274003E6206 /* PacketMananger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PacketMananger.h; sourceTree = "<group>"; };
 		C40CC8561F021274003E6206 /* PacketMananger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PacketMananger.m; sourceTree = "<group>"; };
+		C41091D11FC131CD00D1D512 /* AddCategoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddCategoryViewController.h; sourceTree = "<group>"; };
+		C41091D21FC131CD00D1D512 /* AddCategoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddCategoryViewController.m; sourceTree = "<group>"; };
+		C44C7435200E40070072C410 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 		C46575D51F0CAF380032AC9F /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewCell.h; sourceTree = "<group>"; };
 		C46575D61F0CAF380032AC9F /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewCell.m; sourceTree = "<group>"; };
 		C47DAFA81F0256AE00D2EAC6 /* PacketEntity+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PacketEntity+CoreDataClass.h"; sourceTree = "<group>"; };
@@ -107,6 +118,21 @@
 		C47F09101F0245B2002B13A1 /* libPDTSimpleCalendar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPDTSimpleCalendar.a; path = "../../../Library/Developer/Xcode/DerivedData/Finance-eedxvefxfjovwsgkfvazjeuzmpyl/Build/Products/Debug-iphonesimulator/PDTSimpleCalendar/libPDTSimpleCalendar.a"; sourceTree = "<group>"; };
 		C47F09111F0245B2002B13A1 /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "../../../Library/Developer/Xcode/DerivedData/Finance-eedxvefxfjovwsgkfvazjeuzmpyl/Build/Products/Debug-iphonesimulator/SDWebImage/libSDWebImage.a"; sourceTree = "<group>"; };
 		C47F09121F0245B2002B13A1 /* libYYModel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libYYModel.a; path = "../../../Library/Developer/Xcode/DerivedData/Finance-eedxvefxfjovwsgkfvazjeuzmpyl/Build/Products/Debug-iphonesimulator/YYModel/libYYModel.a"; sourceTree = "<group>"; };
+		C4DE68DA1FC136C7002A68CC /* TextInputTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextInputTableViewCell.h; sourceTree = "<group>"; };
+		C4DE68DB1FC136C7002A68CC /* TextInputTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextInputTableViewCell.m; sourceTree = "<group>"; };
+		C4DE68DF1FC13C55002A68CC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C4DE68F11FC164CA002A68CC /* MomentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MomentViewController.h; sourceTree = "<group>"; };
+		C4DE68F21FC164CA002A68CC /* MomentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MomentViewController.m; sourceTree = "<group>"; };
+		C4DE68F41FC16508002A68CC /* AddMomentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddMomentViewController.h; sourceTree = "<group>"; };
+		C4DE68F51FC16508002A68CC /* AddMomentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddMomentViewController.m; sourceTree = "<group>"; };
+		C4DE68FD1FC167A4002A68CC /* MomentEntity+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MomentEntity+CoreDataClass.h"; sourceTree = "<group>"; };
+		C4DE68FE1FC167A4002A68CC /* MomentEntity+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MomentEntity+CoreDataClass.m"; sourceTree = "<group>"; };
+		C4DE68FF1FC167A4002A68CC /* MomentEntity+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MomentEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C4DE69001FC167A4002A68CC /* MomentEntity+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MomentEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C4DE69041FC19BCE002A68CC /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		C4DE69051FC19BCE002A68CC /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		C4DE69071FC19DED002A68CC /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		C4DE69081FC19DED002A68CC /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		CFE9E48392BC661A3F50F371 /* Pods-FinanceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinanceTests/Pods-FinanceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D5D879DC1C5B227349777BF9 /* Pods-FinanceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinanceUITests/Pods-FinanceUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +149,7 @@
 				C47F09171F0245B2002B13A1 /* libPDTSimpleCalendar.a in Frameworks */,
 				C47F09181F0245B2002B13A1 /* libSDWebImage.a in Frameworks */,
 				C47F09191F0245B2002B13A1 /* libYYModel.a in Frameworks */,
+				245599B0F2AB05E15737A8F6 /* libPods-Finance.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +227,7 @@
 		C4051A751EE3C0C900DF37D8 /* Finance */ = {
 			isa = PBXGroup;
 			children = (
+				C4DE68DD1FC136D1002A68CC /* cell */,
 				C4051AB01EE3C60D00DF37D8 /* View */,
 				C4051AAF1EE3C60000DF37D8 /* Model */,
 				C4051AAE1EE3C5F400DF37D8 /* Network */,
@@ -207,6 +235,7 @@
 				C4051A791EE3C0C900DF37D8 /* AppDelegate.h */,
 				C4051A7A1EE3C0C900DF37D8 /* AppDelegate.m */,
 				C4051A851EE3C0C900DF37D8 /* Assets.xcassets */,
+				C44C7435200E40070072C410 /* images */,
 				C4051A871EE3C0C900DF37D8 /* LaunchScreen.storyboard */,
 				C4051A8A1EE3C0C900DF37D8 /* Info.plist */,
 				C4051A821EE3C0C900DF37D8 /* Finance.xcdatamodeld */,
@@ -219,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				C4051A771EE3C0C900DF37D8 /* main.m */,
+				C4DE68DF1FC13C55002A68CC /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -244,24 +274,13 @@
 		C4051AAD1EE3C5E500DF37D8 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				C4DE69031FC19BBA002A68CC /* user */,
+				C4DE68E11FC14E2D002A68CC /* in */,
+				C4DE68E01FC14E26002A68CC /* out */,
 				C4051AB11EE3D8F200DF37D8 /* BaseViewController.h */,
 				C4051AB21EE3D8F200DF37D8 /* BaseViewController.m */,
-				C4051AB41EE3D91100DF37D8 /* OutViewController.h */,
-				C4051AB51EE3D91100DF37D8 /* OutViewController.m */,
-				C4051AB71EE3D91F00DF37D8 /* InViewController.h */,
-				C4051AB81EE3D91F00DF37D8 /* InViewController.m */,
-				C4051ABA1EE3D92D00DF37D8 /* UserViewController.h */,
-				C4051ABB1EE3D92D00DF37D8 /* UserViewController.m */,
-				C47DAFAE1F03B7BB00D2EAC6 /* AddOutViewController.h */,
-				C47DAFAF1F03B7BC00D2EAC6 /* AddOutViewController.m */,
-				C47DAFB41F03BABF00D2EAC6 /* InputTableViewCell.h */,
-				C47DAFB51F03BABF00D2EAC6 /* InputTableViewCell.m */,
-				C47DAFB71F03BCA700D2EAC6 /* TextTableViewCell.h */,
-				C47DAFB81F03BCA700D2EAC6 /* TextTableViewCell.m */,
-				C47DAFB11F03B7CD00D2EAC6 /* AddInViewController.h */,
-				C47DAFB21F03B7CD00D2EAC6 /* AddInViewController.m */,
-				C46575D51F0CAF380032AC9F /* BaseTableViewCell.h */,
-				C46575D61F0CAF380032AC9F /* BaseTableViewCell.m */,
+				C41091D11FC131CD00D1D512 /* AddCategoryViewController.h */,
+				C41091D21FC131CD00D1D512 /* AddCategoryViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -276,12 +295,18 @@
 		C4051AAF1EE3C60000DF37D8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C4DE68FD1FC167A4002A68CC /* MomentEntity+CoreDataClass.h */,
+				C4DE68FE1FC167A4002A68CC /* MomentEntity+CoreDataClass.m */,
+				C4DE68FF1FC167A4002A68CC /* MomentEntity+CoreDataProperties.h */,
+				C4DE69001FC167A4002A68CC /* MomentEntity+CoreDataProperties.m */,
 				C47DAFA81F0256AE00D2EAC6 /* PacketEntity+CoreDataClass.h */,
 				C47DAFA91F0256AE00D2EAC6 /* PacketEntity+CoreDataClass.m */,
 				C47DAFAA1F0256AE00D2EAC6 /* PacketEntity+CoreDataProperties.h */,
 				C47DAFAB1F0256AE00D2EAC6 /* PacketEntity+CoreDataProperties.m */,
 				C40CC8551F021274003E6206 /* PacketMananger.h */,
 				C40CC8561F021274003E6206 /* PacketMananger.m */,
+				C4DE69071FC19DED002A68CC /* UserModel.h */,
+				C4DE69081FC19DED002A68CC /* UserModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -291,6 +316,58 @@
 			children = (
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		C4DE68DD1FC136D1002A68CC /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				C47DAFB41F03BABF00D2EAC6 /* InputTableViewCell.h */,
+				C47DAFB51F03BABF00D2EAC6 /* InputTableViewCell.m */,
+				C47DAFB71F03BCA700D2EAC6 /* TextTableViewCell.h */,
+				C47DAFB81F03BCA700D2EAC6 /* TextTableViewCell.m */,
+				C4DE68DA1FC136C7002A68CC /* TextInputTableViewCell.h */,
+				C4DE68DB1FC136C7002A68CC /* TextInputTableViewCell.m */,
+				C46575D51F0CAF380032AC9F /* BaseTableViewCell.h */,
+				C46575D61F0CAF380032AC9F /* BaseTableViewCell.m */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		C4DE68E01FC14E26002A68CC /* out */ = {
+			isa = PBXGroup;
+			children = (
+				C4051AB41EE3D91100DF37D8 /* OutViewController.h */,
+				C4051AB51EE3D91100DF37D8 /* OutViewController.m */,
+				C47DAFAE1F03B7BB00D2EAC6 /* AddOutViewController.h */,
+				C47DAFAF1F03B7BC00D2EAC6 /* AddOutViewController.m */,
+			);
+			name = out;
+			sourceTree = "<group>";
+		};
+		C4DE68E11FC14E2D002A68CC /* in */ = {
+			isa = PBXGroup;
+			children = (
+				C4051AB71EE3D91F00DF37D8 /* InViewController.h */,
+				C4051AB81EE3D91F00DF37D8 /* InViewController.m */,
+				C47DAFB11F03B7CD00D2EAC6 /* AddInViewController.h */,
+				C47DAFB21F03B7CD00D2EAC6 /* AddInViewController.m */,
+				C4DE68F11FC164CA002A68CC /* MomentViewController.h */,
+				C4DE68F21FC164CA002A68CC /* MomentViewController.m */,
+				C4DE68F41FC16508002A68CC /* AddMomentViewController.h */,
+				C4DE68F51FC16508002A68CC /* AddMomentViewController.m */,
+			);
+			name = in;
+			sourceTree = "<group>";
+		};
+		C4DE69031FC19BBA002A68CC /* user */ = {
+			isa = PBXGroup;
+			children = (
+				C4051ABA1EE3D92D00DF37D8 /* UserViewController.h */,
+				C4051ABB1EE3D92D00DF37D8 /* UserViewController.m */,
+				C4DE69041FC19BCE002A68CC /* LoginViewController.h */,
+				C4DE69051FC19BCE002A68CC /* LoginViewController.m */,
+			);
+			name = user;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,7 +446,8 @@
 				TargetAttributes = {
 					C4051A721EE3C0C900DF37D8 = {
 						CreatedOnToolsVersion = 8.3.2;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 4BFWRR556F;
+						ProvisioningStyle = Automatic;
 					};
 					C4051A8E1EE3C0CA00DF37D8 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -573,17 +651,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				C46575D71F0CAF380032AC9F /* BaseTableViewCell.m in Sources */,
+				C4DE69021FC167A4002A68CC /* MomentEntity+CoreDataProperties.m in Sources */,
 				C423B5A01F024767004CEAEE /* AppDelegate.m in Sources */,
+				C4DE68F61FC16508002A68CC /* AddMomentViewController.m in Sources */,
 				C47DAFAD1F0256AE00D2EAC6 /* PacketEntity+CoreDataProperties.m in Sources */,
 				C40CC8571F021274003E6206 /* PacketMananger.m in Sources */,
 				C47DAFB01F03B7BC00D2EAC6 /* AddOutViewController.m in Sources */,
+				C4DE68DC1FC136C7002A68CC /* TextInputTableViewCell.m in Sources */,
 				C4051ABC1EE3D92D00DF37D8 /* UserViewController.m in Sources */,
 				C4051A841EE3C0C900DF37D8 /* Finance.xcdatamodeld in Sources */,
 				C47DAFB61F03BABF00D2EAC6 /* InputTableViewCell.m in Sources */,
+				C4DE69061FC19BCE002A68CC /* LoginViewController.m in Sources */,
 				C4051AB91EE3D91F00DF37D8 /* InViewController.m in Sources */,
+				C4DE68F31FC164CA002A68CC /* MomentViewController.m in Sources */,
+				C4DE69091FC19DED002A68CC /* UserModel.m in Sources */,
 				C47DAFB91F03BCA700D2EAC6 /* TextTableViewCell.m in Sources */,
 				C47DAFB31F03B7CD00D2EAC6 /* AddInViewController.m in Sources */,
 				C4051AB61EE3D91100DF37D8 /* OutViewController.m in Sources */,
+				C41091D31FC131CD00D1D512 /* AddCategoryViewController.m in Sources */,
 				C4051AB31EE3D8F200DF37D8 /* BaseViewController.m in Sources */,
 				C4051A781EE3C0C900DF37D8 /* main.m in Sources */,
 				C47DAFAC1F0256AE00D2EAC6 /* PacketEntity+CoreDataClass.m in Sources */,
@@ -730,8 +815,12 @@
 			baseConfigurationReference = 98B5B0D8C5BB15629E878365 /* Pods-Finance.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4BFWRR556F;
 				ENABLE_BITCODE = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Finance/PrefixHeader.pch";
 				INFOPLIST_FILE = Finance/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -747,8 +836,12 @@
 			baseConfigurationReference = 76C6DD0A50D402AFC0F70E66 /* Pods-Finance.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4BFWRR556F;
 				ENABLE_BITCODE = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Finance/PrefixHeader.pch";
 				INFOPLIST_FILE = Finance/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

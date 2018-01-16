@@ -37,6 +37,7 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
+    self.textLabel.textAlignment = NSTextAlignmentLeft;
     [self.textLabel setFrame:CGRectMake(self.separatorInset.left, 0, 96-self.separatorInset.left, self.contentView.bounds.size.height)];
     [self.detailTextLabel setFrame:CGRectMake(96, 0, self.contentView.bounds.size.width-96, self.contentView.bounds.size.height)];
 }

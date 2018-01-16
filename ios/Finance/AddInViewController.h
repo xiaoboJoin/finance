@@ -7,7 +7,9 @@
 //
 
 #import "BaseViewController.h"
+#import "MomentEntity+CoreDataProperties.h"
 
 @interface AddInViewController : BaseViewController
+@property(nonatomic,strong)MomentEntity *moment;
 
 @end

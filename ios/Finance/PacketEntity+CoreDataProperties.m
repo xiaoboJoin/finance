@@ -23,5 +23,6 @@
 @dynamic phone;
 @dynamic type;
 @dynamic updateAt;
+@dynamic eventid;
 
 @end
